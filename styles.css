@@ -1,0 +1,117 @@
+/* Font import URL */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+/* Custom variables */
+:root {
+  --green: #c5f82a;
+  --white: #fff;
+  --grey: hsl(0, 0%, 20%);
+  --dark-grey: #1f1f1f;
+  --off-black: #141414;
+}
+
+/* Base styling */
+html {
+  font-family: "Inter", sans-serif;
+  padding: 0;
+  margin: 0;
+  background: var(--off-black);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Initializing flex container */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--dark-grey);
+  border-radius: 10px;
+  padding: 30px;
+  gap: 10px;
+  cursor: default;
+  /* box-shadow: 0px 0px 0px var(--grey); */
+}
+
+img {
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+}
+
+h1 {
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+p.location {
+  color: var(--green);
+  font-weight: 600;
+  font-size: 10px;
+  margin-top: 0px;
+}
+
+p {
+  color: var(--white);
+  font-weight: 300;
+  font-size: 10px;
+  margin-top: 0;
+}
+
+/* Flexing buttons so they stack up on each other and maintain same width */
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+button {
+  background: var(--grey);
+  width: 221.13px;
+  height: 33px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  color: var(--white);
+  font-family: "Inter", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+/* Pseudo element */
+button:hover {
+  background: var(--green);
+  color: #141414;
+}
+
+/* .container:hover {
+  box-shadow: 10px 10px 0px var(--grey);
+  transition: all 0.5s ease-in-out;
+} */
+
+/* Atrribution text & link at bottom of page */
+.attribution {
+  font-family: "Inter", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  text-align: center;
+  display: block;
+  position: relative;
+  top: 70px;
+  color: var(--green);
+  cursor: default;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
